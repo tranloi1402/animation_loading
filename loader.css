@@ -1,0 +1,86 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+#loader {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader div {
+    /* khi chuyển động ko ảnh hưởng đến nhau */
+    position: absolute;
+    /* left: 0; */
+}
+#loader div:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    background-color: rgb(255, 0, 179);
+    animation: sipnner 1s infinite linear;
+    animation-delay: -0.5s;
+}
+#loader div:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    background-color: rgb(9, 218, 255);
+    animation: sipnner 1s infinite linear;
+}
+#loader div:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    background-color: rgb(255, 0, 179);
+    animation: sipnner2 1s infinite linear;
+    animation-delay: -0.5s;
+}
+
+/* sử dụng % */
+@keyframes sipnner {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(15px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    75% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes sipnner2 {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    25% {
+        opacity: 1;
+        transform: translateX(15px);
+    }
+    49.9% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    75% {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}

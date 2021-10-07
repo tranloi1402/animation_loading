@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test loading</title>
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="stagger.css">
+</head>
+
+<body>
+    <div>
+        <h2 style="text-align: center; color: rgb(119, 119, 119);">
+            Mẫu 1:
+        </h2>
+        <div id="loading">
+            <div class="ring"></div>
+        </div>
+    </div>
+    <div>
+        <h2 style="text-align: center; color: rgb(119, 119, 119);">
+            Mẫu 2:
+        </h2>
+        <div id="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div>
+        <h2 style="text-align: center; color: rgb(119, 119, 119);">
+            Mẫu 3:
+        </h2>
+        <div id="stagger">
+            <span>Loading</span>
+            <div style="--delay: 1s"></div>
+            <div style="--delay: 2s"></div>
+            <div style="--delay: 3s"></div>
+            <div style="--delay: 4s"></div>
+        </div>
+    </div>
+</body>
+
+</html>
